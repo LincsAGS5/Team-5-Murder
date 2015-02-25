@@ -1,0 +1,71 @@
+Hints
+------
+
+First case:
+
+1st = Try interacting with objects you see. 
+
+2nd = Try the top of the stairs. 
+
+3rd = Try looking at the wall. 
+
+4th = Try looking at the body. 
+
+
+Second case: 
+
+Book hints:
+
+1st = Try reading through the book carefully.
+      It may help you with the case. 
+
+Hints without book:
+
+1st = Try exploring downstairs. 
+      You may find something useful to the case.
+
+2nd = Objects that look like you can interact with
+      may provide useful information.
+
+3rd = Try checking the body thoroughly. 
+
+4th = The drawer looks slightly ajared. Try 
+      investigating that.
+
+
+Third case: 
+
+1st = A couple of objects within the mansion could 
+      shed some light on this case.
+
+2nd = Try looking in the kitchen.
+
+3rd = Try looking in the master room.
+
+4th = Try looking in the library.
+
+
+First Puzzle: 
+
+1st = Try looking at the book names. 
+
+2nd = Do the names have any connection with the current situation? 
+
+
+Second Puzzle:
+
+1st = Try looking at the book in the room.
+
+2nd = The book title looks interesting. 
+
+
+Third Puzzle: 
+
+1st = The painting looks odd.
+
+2nd = Is there a connection between this puzzle and the previous one? 
+
+3rd = There is a dial that goes 0-26. I wonder what else does that? 
+
+
+

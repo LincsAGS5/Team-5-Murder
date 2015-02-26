@@ -1,0 +1,3 @@
+A knife block, with all but one slots filled.
+
+There's a knife missing from this knife block.

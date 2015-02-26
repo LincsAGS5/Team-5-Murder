@@ -120,6 +120,11 @@ public class OpenDoor : MonoBehaviour {
 						print("door tagged");
 						Application.LoadLevel("UpperFoyer");
 					}
+					if (hit.collider.tag == "DoorHidden")
+					{
+						print("door tagged");
+						Application.LoadLevel("Hidden");
+					}
 				}
 			}
 		}

@@ -11,6 +11,7 @@ public class InventoryDisplay : MonoBehaviour {
 	public GameObject MaidButton;
 	public GameObject ParchmentButton;
 	public GameObject BloodSplatterButton;
+	public GameObject KnifeButton;
 	// Use this for initialization
 	int count;
 	int step;
@@ -50,6 +51,11 @@ public class InventoryDisplay : MonoBehaviour {
 			{
 				BloodSplatterButton.SetActive (true);
 				BloodSplatterButton.transform.position = new Vector2 (BloodSplatterButton.transform.position.x, BloodSplatterButton.transform.position.y /*+ (go.GetComponent<KeepOnLoad> ().CrackedPlatePosition * step)*/);
+			}
+			if (go.GetComponent<KeepOnLoad> ().Knife == true) 
+			{
+				KnifeButton.SetActive (true);
+				KnifeButton.transform.position = new Vector2 (KnifeButton.transform.position.x, KnifeButton.transform.position.y /*+ (go.GetComponent<KeepOnLoad> ().CrackedPlatePosition * step)*/);
 			}
 		}
 	}

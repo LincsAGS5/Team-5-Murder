@@ -9,6 +9,7 @@ public class KeepOnLoad : MonoBehaviour {
 	public bool Maid;
 	public bool BloodSplatter;
 	public bool Footprints;
+	public bool Knife;
 	public int CrackedPlatePosition = 0;
 	
 	// Use this for initialization

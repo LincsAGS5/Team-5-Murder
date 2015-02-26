@@ -141,6 +141,32 @@ public class ExamineObject : MonoBehaviour {
 						start = Bookcase.transform.position;
 						end = new Vector3(start.x + 5, start.y, start.z); 
 					}
+					if (hit.collider.name == "Knife")
+					{
+						print("This object is a knife covered in blood, it must be one of the murder weapons!");
+						print("You add knife to your inventory.");
+						addInventory = true;
+						SelectedObject = hit.collider.gameObject;
+						KeepOnLoad.GetComponent<KeepOnLoad> ().Knife = true;
+						Destroy(SelectedObject);
+						print("Item has been removed from scene.");
+					}
+					if (hit.collider.name == "Bed")
+					{
+						print("This object is a bed.");
+					}
+					if (hit.collider.name == "Cupboard")
+					{
+						print("This object is a cupboard.");
+					}
+					if (hit.collider.name == "Dressing Table")
+					{
+						print("This object is a dressing table.");
+					}
+					if (hit.collider.name == "Stool")
+					{
+						print("This object is a stool.");
+					}
 				}
 			}
 		}

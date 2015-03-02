@@ -4,7 +4,7 @@ using System.Collections;
 public class OpenDoor : MonoBehaviour 
 {
 
-    bool slide = false;
+  public  bool SlideOpenTheDoor = false;
     float WaitTime = 3;
 
 	// Use this for initialization
@@ -17,16 +17,24 @@ public class OpenDoor : MonoBehaviour
     void StopDoor()
     {
 
-        slide = false;
+        SlideOpenTheDoor = false;
+    }
+
+
+    public void OpenTheDoor()
+    {
+
+        SlideOpenTheDoor = true;
+        Invoke("StopDoor", 4); 
     }
 
 	// Update is called once per frame
 	void Update () 
     {
 
-        if (slide == true)
+        if (SlideOpenTheDoor == true)
         {
-            transform.Translate(Vector3.left * Time.deltaTime);
+            transform.Translate(Vector3.right * Time.deltaTime);
         }
 
        // Invoke ("StopDoor", 4); 
@@ -34,11 +42,10 @@ public class OpenDoor : MonoBehaviour
 
     void OnGUI()
     {
-        if (GUI.Button(new Rect(10, 70, 80, 30), "Open Door"))
+        if (GUI.Button(new Rect(175, 540, 140, 30), "Force the Door Open!"))
         {
-            slide = true;
-            Invoke("StopDoor", 4); 
 
+            OpenTheDoor();
         }
     }
 

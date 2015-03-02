@@ -46,7 +46,14 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Flare Gun\Scripts\flarebullet.cs" />
+     <Compile Include="Assets\Flare Gun\Scripts\flaregun.cs" />
+     <Compile Include="Assets\Flare Gun\Scripts\flareround.cs" />
+     <Compile Include="Assets\Flare Gun\Scripts\swayc.cs" />
+     <Compile Include="Assets\Flare Gun\Standard Assets\Character Controllers\Sources\Scripts\MouseLook.cs" />
+     <Compile Include="Assets\Scripts\Handle Script.cs" />
      <Compile Include="Assets\Scripts\OpenDoor.cs" />
+     <Compile Include="Assets\Scripts\RotateLock.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.1/UnityEngine.UI.dll</HintPath>
  </Reference>

@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class ExamineObject : MonoBehaviour {
 	
@@ -10,6 +11,8 @@ public class ExamineObject : MonoBehaviour {
 	public bool BookcaseTagged;
 	Vector3 start;
 	Vector3 end;
+	public GameObject GameLogText;
+	//public GUIText GameLogText;
 	// Use this for initialization
 	void Start () {
 		addInventory = false;
@@ -126,12 +129,15 @@ public class ExamineObject : MonoBehaviour {
 					if (hit.collider.name == "Parchment")
 					{
 						print("A piece of parchment which reads \"In the right hands I can help protect life but at the same time destroy life... What am I?\". Maybe this is a code for something?");
-						print("Hit enter to add parchment to your inventory.");
+
+
 						addInventory = true;
 						SelectedObject = hit.collider.gameObject;
 						KeepOnLoad.GetComponent<KeepOnLoad> ().Parchment = true;
 						Destroy(SelectedObject);
 						print("Item has been removed from scene.");
+						GameLogText.GetComponent<Text>().text = GameLogText.GetComponent<Text>().text + "\nA piece of parchment which reads \"In the right hands I can help protect life but at the same time destroy life... What am I?\". Maybe this is a code for something?";
+
 					}
 					if (hit.collider.tag == "Bookcase")
 					{

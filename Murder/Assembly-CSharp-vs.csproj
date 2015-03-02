@@ -49,6 +49,7 @@
      <Compile Include="Assets\ExamineObject.cs" />
      <Compile Include="Assets\InventoryDisplay.cs" />
      <Compile Include="Assets\KeepOnLoad.cs" />
+     <Compile Include="Assets\ModifyText.cs" />
      <Compile Include="Assets\MovePlayer.cs" />
      <Compile Include="Assets\OpenDoor.cs" />
  <Reference Include="Assembly-UnityScript-firstpass">

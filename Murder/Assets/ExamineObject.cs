@@ -5,24 +5,17 @@ using UnityEngine.UI;
 public class ExamineObject : MonoBehaviour {
 	
 	public Object SelectedObject;
-	public bool addInventory;
-	public GameObject KeepOnLoad;
-	public GameObject Bookcase;
-	public bool BookcaseTagged;
-	Vector3 start;
-	Vector3 end;
 	public GameObject GameLogText;
-	//public GUIText GameLogText;
+
 	// Use this for initialization
 	void Start () {
-		addInventory = false;
+
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetMouseButtonDown(0))
-		{
-			
+		{			
 			RaycastHit hit;
 			Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 			if (Physics.Raycast(ray, out hit))
@@ -45,20 +38,6 @@ public class ExamineObject : MonoBehaviour {
 					{
 						print("This object is a plate.");
 					}
-					if (hit.collider.name == "Cracked Plate")
-					{
-						print("This object is a cracked plate.");
-						print("You add cracked plate to your inventory.");
-						addInventory = true;
-						SelectedObject = hit.collider.gameObject;
-						KeepOnLoad.GetComponent<KeepOnLoad> ().CrackedPlate = true;
-						Destroy(SelectedObject);
-						print("Item has been removed from scene.");
-					}
-					if (hit.collider.name == "Piano")
-					{
-						print("This object is a piano.");
-					}
 					if (hit.collider.name == "Couch")
 					{
 						print("This object is a couch.");
@@ -79,10 +58,6 @@ public class ExamineObject : MonoBehaviour {
 					{
 						print("This object is a sink.");
 					}
-					if (hit.collider.name == "Snooker Table")
-					{
-						print("This object is a snooker table.");
-					}
 					if (hit.collider.name == "Logs")
 					{
 						print("This object is a log.");
@@ -90,17 +65,14 @@ public class ExamineObject : MonoBehaviour {
 					if (hit.collider.name == "Death1")
 					{
 						print("The way the body has landed suggest the victim was unaware and got hit from behind by a blunt object.");
-						KeepOnLoad.GetComponent<KeepOnLoad> ().Maid = true;
 					}
 					if (hit.collider.name == "Blood Splatter")
 					{
 						print("There is blood on the wall. Based on the angle of the splatter it appears the killer was taller than the victim.");
-						KeepOnLoad.GetComponent<KeepOnLoad> ().BloodSplatter = true;
 					}
 					if (hit.collider.name == "Footprints")
 					{
 						print("There are 2 sets of footprints. The ones behind appear to be a larger size than the ones in front.");
-						KeepOnLoad.GetComponent<KeepOnLoad> ().Footprints = true;
 					}
 					if (hit.collider.name == "Vinyl")
 					{
@@ -122,40 +94,11 @@ public class ExamineObject : MonoBehaviour {
 					{
 						print("This object is a bathtub.");
 					}
-					if (hit.collider.name == "Shower")
-					{
-						print("This object is a shower.");
-					}
 					if (hit.collider.name == "Parchment")
 					{
-						print("A piece of parchment which reads \"In the right hands I can help protect life but at the same time destroy life... What am I?\". Maybe this is a code for something?");
-
-
-						addInventory = true;
+						GameLogText.GetComponent<Text>().text = GameLogText.GetComponent<Text>().text + "\nA piece of parchment which reads \"In the right hands I can help protect life but at the same time destroy life... What am I?\". Maybe this is a code for something?\n";
 						SelectedObject = hit.collider.gameObject;
-						KeepOnLoad.GetComponent<KeepOnLoad> ().Parchment = true;
-						Destroy(SelectedObject);
-						print("Item has been removed from scene.");
-						GameLogText.GetComponent<Text>().text = GameLogText.GetComponent<Text>().text + "\nA piece of parchment which reads \"In the right hands I can help protect life but at the same time destroy life... What am I?\". Maybe this is a code for something?";
-
-					}
-					if (hit.collider.tag == "Bookcase")
-					{
-						print("Bookcase Tagged.");
-						Bookcase = hit.collider.gameObject;
-						BookcaseTagged = true;
-						start = Bookcase.transform.position;
-						end = new Vector3(start.x + 5, start.y, start.z); 
-					}
-					if (hit.collider.name == "Knife")
-					{
-						print("This object is a knife covered in blood, it must be one of the murder weapons!");
-						print("You add knife to your inventory.");
-						addInventory = true;
-						SelectedObject = hit.collider.gameObject;
-						KeepOnLoad.GetComponent<KeepOnLoad> ().Knife = true;
-						Destroy(SelectedObject);
-						print("Item has been removed from scene.");
+						Destroy (SelectedObject);
 					}
 					if (hit.collider.name == "Bed")
 					{
@@ -173,13 +116,20 @@ public class ExamineObject : MonoBehaviour {
 					{
 						print("This object is a stool.");
 					}
+					if (hit.collider.name == "Book")
+					{
+						GameLogText.GetComponent<Text>().text = GameLogText.GetComponent<Text>().text + "\nA book with the title \"Modern Warfare\". Is that a reference to something?\n";
+						SelectedObject = hit.collider.gameObject;
+						Destroy (SelectedObject);
+					}
+					if (hit.collider.name == "Painting")
+					{
+						GameLogText.GetComponent<Text>().text = GameLogText.GetComponent<Text>().text + "\nA crooked painting on the wall. Behind it is a safe! Now what is the combination?\n";
+						SelectedObject = hit.collider.gameObject;
+						Destroy (SelectedObject);
+					}
 				}
 			}
 		}
-		if (BookcaseTagged == true) 
-		{
-			Bookcase.transform.position = Vector3.Lerp(Bookcase.transform.position, end, Time.deltaTime);
-		}
-
 	}
 }

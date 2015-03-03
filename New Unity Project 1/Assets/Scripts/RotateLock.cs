@@ -139,9 +139,9 @@ public class RotateLock : MonoBehaviour
 
             codeHelper += 1;
 
-            if (codeHelper == 109)
+            if (codeHelper > 109)
             {
-                codeHelper -= 1;
+                codeHelper = 100;
             }
 
         }
@@ -155,9 +155,9 @@ public class RotateLock : MonoBehaviour
             codeHelper -= 1;
 
 
-            if (codeHelper == 90)
+            if (codeHelper <= 90)
             {
-                codeHelper += 1;
+                codeHelper = 100;
             }
 
         }

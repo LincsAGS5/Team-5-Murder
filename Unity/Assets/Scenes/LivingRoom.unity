@@ -1295,7 +1295,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 228589565}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.8654871, y: 2.16431427, z: -18.196003}
+  m_LocalPosition: {x: 15.9099998, y: 2.16000009, z: -18.2000008}
   m_LocalScale: {x: .100000001, y: 6, z: 22.2948551}
   m_Children: []
   m_Father: {fileID: 1844581340}
@@ -3118,7 +3118,6 @@ GameObject:
   - 224: {fileID: 958168930}
   - 222: {fileID: 958168933}
   - 114: {fileID: 958168932}
-  - 114: {fileID: 958168931}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -3147,17 +3146,6 @@ RectTransform:
   m_AnchoredPosition: {x: -225, y: -375}
   m_SizeDelta: {x: 350, y: 650}
   m_Pivot: {x: .5, y: .5}
---- !u!114 &958168931
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 958168929}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab6494e4715b1cb42b5a7796aa7754bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &958168932
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3170,7 +3158,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: .963235319, g: .658682942, b: .658682942, a: .392156869}
+  m_Color: {r: .933823526, g: .631704152, b: .631704152, a: 1}
   m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
   m_PreserveAspect: 0
@@ -3838,7 +3826,6 @@ GameObject:
   - 33: {fileID: 1224107133}
   - 65: {fileID: 1224107132}
   - 23: {fileID: 1224107131}
-  - 114: {fileID: 1224107130}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -3846,17 +3833,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1224107130
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1224107129}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06b2fe1ad48ea624da052b0021191d09, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1224107131
 Renderer:
   m_ObjectHideFlags: 0
@@ -5275,7 +5251,6 @@ GameObject:
   - 33: {fileID: 1925967039}
   - 65: {fileID: 1925967038}
   - 23: {fileID: 1925967037}
-  - 114: {fileID: 1925967036}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -5283,17 +5258,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1925967036
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1925967035}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06b2fe1ad48ea624da052b0021191d09, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1925967037
 Renderer:
   m_ObjectHideFlags: 0

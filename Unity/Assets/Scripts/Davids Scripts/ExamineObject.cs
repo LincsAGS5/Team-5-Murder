@@ -24,11 +24,15 @@ public class ExamineObject : MonoBehaviour {
 				{					
 					if (hit.collider.name == "Chair")
 					{
-                        ItemDescription.GetComponent<Text>().text = "\nThis object is a chair.";
+                        ItemDescription.GetComponent<Text>().text = "\nDining chairs surround the table in the centre.";
 					}
 					if (hit.collider.name == "Table")
 					{
-                        ItemDescription.GetComponent<Text>().text = "\nThis object is a table.";
+                        ItemDescription.GetComponent<Text>().text = "\nAn empty wooden dining table.";
+					}                
+                    if (hit.collider.name == "Small Table")
+					{
+                        ItemDescription.GetComponent<Text>().text = "\nA small table for drinks by the fire.";
 					}
 					/*if (hit.collider.name == "Wine Glass")
 					{
@@ -40,27 +44,31 @@ public class ExamineObject : MonoBehaviour {
 					}*/
 					if (hit.collider.name == "Couch")
 					{
-                        ItemDescription.GetComponent<Text>().text = "\nThis object is a couch.";
+                        ItemDescription.GetComponent<Text>().text = "\nComfy looking living room seating.";
 					}
 					if (hit.collider.name == "Cooker")
 					{
-                        ItemDescription.GetComponent<Text>().text = "\nThis object is a cooker.";
+                        ItemDescription.GetComponent<Text>().text = "\nA black, electic cooker. \nNothing's cooking in the oven.";
 					}
 					if (hit.collider.name == "Fridge")
 					{
-                        ItemDescription.GetComponent<Text>().text = "\nThis object is a fridge.";
+                        ItemDescription.GetComponent<Text>().text = "\nA large fridge, stocked full of food.";
 					}
 					if (hit.collider.name == "Counter")
 					{
-                        ItemDescription.GetComponent<Text>().text = "\nThis object is a counter.";
+                        ItemDescription.GetComponent<Text>().text = "\nA polished black-stone kitchen counter. It is as clean as a whistle.";
 					}
+                    if (hit.collider.name == "Kitchen Cupboard")
+                    {
+                        ItemDescription.GetComponent<Text>().text = "\nKitchen cupboards filled with utensils.";
+                    }
 					if (hit.collider.name == "Sink")
 					{
-                        ItemDescription.GetComponent<Text>().text = "\nThis object is a sink.";
+                        ItemDescription.GetComponent<Text>().text = "\nThe kitchen sink, made from stainless steel.";
 					}
 					if (hit.collider.name == "Logs")
 					{
-                        ItemDescription.GetComponent<Text>().text = "\nThis object is a log.";
+                        ItemDescription.GetComponent<Text>().text = "\nExtra logs for the fire.";
 					}
 					/*if (hit.collider.name == "Death1")
 					{
@@ -80,7 +88,7 @@ public class ExamineObject : MonoBehaviour {
 					}
 					if (hit.collider.name == "Bookcase")
 					{
-                        ItemDescription.GetComponent<Text>().text = "\nThis object is a bookcase.";
+                        ItemDescription.GetComponent<Text>().text = "\nA mahogany bookcase filled with various hardback books and journals.";
 					}
 					/*if (hit.collider.name == "Desk")
 					{
@@ -88,42 +96,50 @@ public class ExamineObject : MonoBehaviour {
 					}*/
 					if (hit.collider.name == "Toilet")
 					{
-                        ItemDescription.GetComponent<Text>().text = "\nThis object is a toilet.";
+                        ItemDescription.GetComponent<Text>().text = "\nA bright white toilet.";
 					}
 					if (hit.collider.name == "Bathtub")
 					{
-                        ItemDescription.GetComponent<Text>().text = "\nThis object is a bathtub.";
+                        ItemDescription.GetComponent<Text>().text = "\nA bright white bathtub so clean you'd question whether it was ever used.";
 					}
 					if (hit.collider.name == "Parchment")
 					{
-						GameLogText.GetComponent<Text>().text = GameLogText.GetComponent<Text>().text + "\nA piece of parchment which reads \"In the right hands I can help protect life but at the same time destroy life... What am I?\". Maybe this is a code for something?";
+						GameLogText.GetComponent<Text>().text = GameLogText.GetComponent<Text>().text + "\nA piece of parchment which reads \"In the right hands I can help protect life but at the same time destroy life... What am I?\". Maybe this is a code for something?\n";
                         ItemDescription.GetComponent<Text>().text = "\nA piece of parchment which reads \"In the right hands I can help protect life but at the same time destroy life... What am I?\". Maybe this is a code for something?\n";
                         SelectedObject = hit.collider.gameObject;
 						Destroy (SelectedObject);
 					}
 					if (hit.collider.name == "Bed")
 					{
-                        ItemDescription.GetComponent<Text>().text = "\nThis object is a bed.";
+                        ItemDescription.GetComponent<Text>().text = "\nA cream sheeted, king sized bed, with a dark wooden finish.";
 					}
 					if (hit.collider.name == "Cupboard")
 					{
-                        ItemDescription.GetComponent<Text>().text = "\nThis object is a cupboard.";
+                        ItemDescription.GetComponent<Text>().text = "\nA hardwood cupboard filled with clothes.";
+					}
+                    if (hit.collider.name == "Wardrobe")
+					{
+                        ItemDescription.GetComponent<Text>().text = "\nAn extra-wide wardrobe, stocked full with clothes.";
 					}
 					if (hit.collider.name == "Dressing Table")
 					{
-                        ItemDescription.GetComponent<Text>().text = "\nThis object is a dressing table.";
+                        ItemDescription.GetComponent<Text>().text = "\nA low dressing table with a mirror.";
 					}
 					if (hit.collider.name == "Stool")
 					{
-                        ItemDescription.GetComponent<Text>().text = "\nThis object is a stool.";
+                        ItemDescription.GetComponent<Text>().text = "\nSeating for the dressing table.";
 					}
                     if (hit.collider.name == "Fireplace")
                     {
-                        ItemDescription.GetComponent<Text>().text = "\nThis object is a fireplace.";
+                        ItemDescription.GetComponent<Text>().text = "\nAn unlit fireplace sits in the centre of the wall.";
                     }
                     if (hit.collider.name == "Door")
                     {
-                        ItemDescription.GetComponent<Text>().text = "\nThis object is a door.";
+                        ItemDescription.GetComponent<Text>().text = "\nA solid wooden door.";
+                    }
+                    if (hit.collider.name == "Window")
+                    {
+                        ItemDescription.GetComponent<Text>().text = "\nA glass paned window.";
                     }
 					if (hit.collider.name == "Book")
 					{

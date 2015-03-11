@@ -35,13 +35,13 @@ public class RotateLock : MonoBehaviour
     {
         if (rotateRight == true)
         {
-            transform.Rotate(Vector3.up * Time.deltaTime * 24.5f);
+            transform.Rotate(Vector3.up * Time.deltaTime * 7.60f);
          
         }
 
         if (rotateLeft == true)
         {
-            transform.Rotate(Vector3.down * Time.deltaTime * 24.5f);
+            transform.Rotate(Vector3.down * Time.deltaTime * 7.60f);
             
 
         }

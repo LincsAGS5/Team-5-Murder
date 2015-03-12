@@ -5,6 +5,8 @@ public class OpenDoor : MonoBehaviour
 {
 
   public  bool SlideOpenTheDoor = false;
+	public AudioClip doorOpen;
+
     float WaitTime = 3;
 
 	// Use this for initialization
@@ -26,6 +28,7 @@ public class OpenDoor : MonoBehaviour
 
         SlideOpenTheDoor = true;
         Invoke("StopDoor", 4); 
+		this.GetComponent<AudioSource>().Play();
     }
 
 	// Update is called once per frame

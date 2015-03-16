@@ -14,7 +14,7 @@ public class RotateLock : MonoBehaviour
     public bool codeNum2 = false;
     public bool codeNum3 = false;
     public GameObject dial;
-    bool guiOn = true;
+    public static bool guiOn = true;
 	float rotationIncrease = 0.0175f;
 	public float rotationStart = 9.25f;
 	public Font largeText;
@@ -24,6 +24,7 @@ public class RotateLock : MonoBehaviour
 	public AudioSource noise1;
 	public AudioSource noise2;
 	public AudioSource noise3;
+
 
     // Use this for initialization
     void Start()
@@ -41,6 +42,16 @@ public class RotateLock : MonoBehaviour
         
 
     }
+
+    void OnMouseEnter()
+    {
+        CameraSwitch.Lockoff = 1;
+        RotateLock.guiOn = true;
+        OpenDoor.guiOn = true;
+        ExamineObject.leaveButton = true;
+    }
+
+ 
 
     // Update is called once per frame
     void Update()
@@ -286,12 +297,22 @@ public class RotateLock : MonoBehaviour
 
     void OnGUI()
     {
-		GUI.skin.font = largeText;
-		GUI.Label(new Rect(150,300,200,100), "Your Hovering over Code Number: " + code.ToString());
-		GUI.skin.font = smallText;
+		
 
         if (guiOn == true)
         {
+            GUI.contentColor = Color.black; 
+
+            GUI.skin.font = largeText;
+
+            GUI.Label(new Rect(170, 250, 200, 100), "Your Hovering over Code Number: " + code.ToString());
+            GUI.skin.font = smallText;
+
+            
+
+            GUI.Label(new Rect(120, 500, 340, 30), "This is just for demostration: Code is: 7, 21, 14");
+
+            GUI.contentColor = Color.white; 
 
             if (GUI.Button(new Rect(320, 630, 110, 30), "Rotate Right"))
             {
@@ -344,10 +365,11 @@ public class RotateLock : MonoBehaviour
             }
         }
 
-        GUI.Label(new Rect(190, 500, 140, 30), "Code is: 7, 21, 14");
+       
 
         if (guiOn == true)
         {
+
 
             if (GUI.Button(new Rect(190, 580, 110, 30), "Log Number"))
             {

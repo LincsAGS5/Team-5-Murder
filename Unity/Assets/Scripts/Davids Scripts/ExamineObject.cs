@@ -4,16 +4,32 @@ using UnityEngine.UI;
 
 public class ExamineObject : MonoBehaviour {
 	
-	public Object SelectedObject;
+	public static Object SelectedObject;
 	public GameObject GameLogText;
     public GameObject ItemDescription;
-	// Use this for initialization
-	void Start () {
+    public Font largeText;
+    public Font smallText;
 
+
+    public static bool leaveButton = false;
+
+    public GameObject painting;
+
+
+	// Use this for initialization
+	void Start () 
+    {
+        CameraSwitch.Lockoff = 0;
+        RotateLock.guiOn = false;
+        OpenDoor.guiOn = false;
+        RotateLock.guiOn = false;
+        OpenDoor.guiOn = false;
+        leaveButton = false;
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void Update () 
+    {
 		if (Input.GetMouseButtonDown(0))
 		{			
 			RaycastHit hit;
@@ -153,10 +169,39 @@ public class ExamineObject : MonoBehaviour {
 						GameLogText.GetComponent<Text>().text = GameLogText.GetComponent<Text>().text + "\nA crooked painting on the wall. Behind it is a safe! Now what is the combination?\n";
                         ItemDescription.GetComponent<Text>().text = "\nA crooked painting on the wall. Behind it is a safe! Now what is the combination?";
                         SelectedObject = hit.collider.gameObject;
-						Destroy (SelectedObject);
+                        CameraSwitch.Lockoff = 1;
+                        RotateLock.guiOn = true;
+                        OpenDoor.guiOn = true;
+                       // leaveButton = true;
+                   //     MovePainting.OpenthePainting = 1;
+                        //M.OpenthePainting = 1;
+                        
+						//Destroy (SelectedObject);
+
+                        
 					}
 				}
 			}
 		}
 	}
+
+    void OnGUI()
+    {
+        if (leaveButton == true)
+        {
+
+            GUI.skin.font = largeText;
+            if (GUI.Button(new Rect(175, 390, 150, 60), "Leave the Safe"))
+            {
+                CameraSwitch.Lockoff = 0;
+                RotateLock.guiOn = false;
+                OpenDoor.guiOn = false;
+                MovePainting.SlideShutThePainting += 1;
+                GUI.skin.font = smallText;
+                leaveButton = false;
+
+            }
+        }
+
+    }
 }

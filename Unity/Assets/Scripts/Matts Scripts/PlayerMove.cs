@@ -103,7 +103,7 @@ public class PlayerMove : MonoBehaviour
 
             if (inputInfo.Features.DistanceBetweenHands > 0.7)
             {
-                this.GetComponent<ExamineObject>().interact();
+                this.GetComponent<ExamineObject>().Interact();
             }
             //this.transform.rotation = new Quaternion(0, 0, inputInfo.Features.Angle,0);
             //Debug.Log(inputInfo.Features.Angle);

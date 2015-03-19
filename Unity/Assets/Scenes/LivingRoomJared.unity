@@ -393,7 +393,6 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 19230783}
-<<<<<<< HEAD:Unity/Assets/Scenes/LivingRoom.unity
   m_LocalRotation: {x: 0, y: 0, z: .113972791, w: .993483901}
   m_LocalPosition: {x: 17.9200001, y: 75.0999985, z: 64.5999985}
   m_LocalScale: {x: 3.43072271, y: 3.86987901, z: .100000001}
@@ -445,13 +444,11 @@ GameObject:
   - 114: {fileID: 39597331}
   m_Layer: 0
   m_Name: Hammer
->>>>>>> Jareds-Newest-Branch!:Unity/Assets/Scenes/LivingRoomJared.unity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
-<<<<<<< HEAD:Unity/Assets/Scenes/LivingRoom.unity
 --- !u!4 &34251554
 Transform:
   m_ObjectHideFlags: 0
@@ -491,26 +488,9 @@ Renderer:
     type: 3}
   m_PrefabInternal: {fileID: 756608770}
   m_GameObject: {fileID: 39597327}
->>>>>>> Jareds-Newest-Branch!:Unity/Assets/Scenes/LivingRoomJared.unity
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-<<<<<<< HEAD:Unity/Assets/Scenes/LivingRoom.unity
   - {fileID: 2100000, guid: d49ecf6d064cb39449e0afa9d7771447, type: 2}
 =======
   - {fileID: 2100000, guid: f44cfe6923e210b42b45a4df76533481, type: 2}
->>>>>>> Jareds-Newest-Branch!:Unity/Assets/Scenes/LivingRoomJared.unity
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
-<<<<<<< HEAD:Unity/Assets/Scenes/LivingRoom.unity
 --- !u!33 &34251556
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -608,7 +588,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 139ffd912eaedef4abf1e1e7ca75346c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
->>>>>>> Jareds-Newest-Branch!:Unity/Assets/Scenes/LivingRoomJared.unity
 --- !u!1 &48128330
 GameObject:
   m_ObjectHideFlags: 0
@@ -746,7 +725,6 @@ Transform:
   m_LocalScale: {x: 5.43112087, y: 2.30062723, z: 2.32392502}
   m_Children: []
   m_Father: {fileID: 883110862}
-<<<<<<< HEAD:Unity/Assets/Scenes/LivingRoom.unity
   m_RootOrder: 13
 --- !u!1001 &63674763
 Prefab:
@@ -806,7 +784,6 @@ Prefab:
   m_IsExploded: 1
 =======
   m_RootOrder: 8
->>>>>>> Jareds-Newest-Branch!:Unity/Assets/Scenes/LivingRoomJared.unity
 --- !u!1 &84968555
 GameObject:
   m_ObjectHideFlags: 0
@@ -3425,7 +3402,6 @@ MeshFilter:
 --- !u!1001 &332936501
 Prefab:
   m_ObjectHideFlags: 0
-<<<<<<< HEAD:Unity/Assets/Scenes/LivingRoom.unity
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 1591381984}
@@ -3568,7 +3544,6 @@ MeshFilter:
   m_GameObject: {fileID: 409290863}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &409620264
->>>>>>> Jareds-Newest-Branch!:Unity/Assets/Scenes/LivingRoomJared.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100000, guid: 27f4d4fdc1fea4a46bad05f3c680f8f7, type: 3}
@@ -3983,7 +3958,6 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-<<<<<<< HEAD:Unity/Assets/Scenes/LivingRoom.unity
   m_SmoothSphereCollisions: 0
   m_Convex: 0
   m_Mesh: {fileID: 4300000, guid: 723a0fc6e16d38b4ab839c36ea60f0c5, type: 3}
@@ -4089,7 +4063,6 @@ BoxCollider:
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &470372903
->>>>>>> Jareds-Newest-Branch!:Unity/Assets/Scenes/LivingRoomJared.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100032, guid: a16d169d7de88f3419aae3753eabbf6f, type: 3}
@@ -4158,7 +4131,6 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-<<<<<<< HEAD:Unity/Assets/Scenes/LivingRoom.unity
   m_SmoothSphereCollisions: 0
   m_Convex: 0
   m_Mesh: {fileID: 4300030, guid: a16d169d7de88f3419aae3753eabbf6f, type: 3}
@@ -4255,7 +4227,6 @@ Transform:
   m_Father: {fileID: 1945795362}
   m_RootOrder: 1
 --- !u!1 &488852433
->>>>>>> Jareds-Newest-Branch!:Unity/Assets/Scenes/LivingRoomJared.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -4322,7 +4293,6 @@ Transform:
   m_LocalPosition: {x: .0900001526, y: 5.5, z: -11.8299999}
   m_LocalScale: {x: .100000001, y: 1, z: 2.5}
   m_Children: []
-<<<<<<< HEAD:Unity/Assets/Scenes/LivingRoom.unity
   m_Father: {fileID: 1844581340}
   m_RootOrder: 3
 --- !u!1 &385385469
@@ -4330,14 +4300,6 @@ Transform:
   m_Father: {fileID: 1087863223}
   m_RootOrder: 5
 --- !u!1 &527790340
->>>>>>> Jareds-Newest-Branch!:Unity/Assets/Scenes/LivingRoomJared.unity
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100012, guid: d086d1bb858eec24aa60c35eff715804, type: 3}
-  m_PrefabInternal: {fileID: 1691743332}
-  serializedVersion: 4
-  m_Component:
-<<<<<<< HEAD:Unity/Assets/Scenes/LivingRoom.unity
   - 4: {fileID: 385385470}
   - 33: {fileID: 385385472}
   - 23: {fileID: 385385471}
@@ -4351,13 +4313,11 @@ GameObject:
   - 23: {fileID: 527790342}
   m_Layer: 0
   m_Name: Marker
->>>>>>> Jareds-Newest-Branch!:Unity/Assets/Scenes/LivingRoomJared.unity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
-<<<<<<< HEAD:Unity/Assets/Scenes/LivingRoom.unity
 --- !u!4 &385385470
 Transform:
   m_ObjectHideFlags: 0
@@ -4574,7 +4534,6 @@ GameObject:
   m_IsActive: 1
 --- !u!108 &601413094
 Light:
->>>>>>> Jareds-Newest-Branch!:Unity/Assets/Scenes/LivingRoomJared.unity
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 2300010, guid: d086d1bb858eec24aa60c35eff715804,
     type: 3}
@@ -4607,7 +4566,6 @@ MeshCollider:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-<<<<<<< HEAD:Unity/Assets/Scenes/LivingRoom.unity
   m_GameObject: {fileID: 385385469}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -4626,7 +4584,6 @@ MeshCollider:
   m_Father: {fileID: 883110862}
   m_RootOrder: 9
 --- !u!1 &615865279
->>>>>>> Jareds-Newest-Branch!:Unity/Assets/Scenes/LivingRoomJared.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -4695,7 +4652,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 355718282}
-<<<<<<< HEAD:Unity/Assets/Scenes/LivingRoom.unity
   m_RootOrder: 3
 --- !u!1 &405053589
 =======
@@ -4828,7 +4784,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 624705396}
 --- !u!1 &630318697
->>>>>>> Jareds-Newest-Branch!:Unity/Assets/Scenes/LivingRoomJared.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -4890,7 +4845,6 @@ Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-<<<<<<< HEAD:Unity/Assets/Scenes/LivingRoom.unity
   m_GameObject: {fileID: 405053589}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 6.95508528, y: 72.3631134, z: 87.3682861}
@@ -4978,7 +4932,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &663607272
->>>>>>> Jareds-Newest-Branch!:Unity/Assets/Scenes/LivingRoomJared.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100000, guid: d888734dfeb789f4ebb6e5e0cc7a3a0e, type: 3}
@@ -5588,7 +5541,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 438451991}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
-<<<<<<< HEAD:Unity/Assets/Scenes/LivingRoom.unity
 --- !u!1 &450804503
 =======
 --- !u!1001 &756608770
@@ -5648,7 +5600,6 @@ Prefab:
   m_IsPrefabParent: 0
   m_IsExploded: 1
 --- !u!1 &764642480
->>>>>>> Jareds-Newest-Branch!:Unity/Assets/Scenes/LivingRoomJared.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100002, guid: da2b52e0e97e839419a4f41324400bf2, type: 3}
@@ -5872,7 +5823,6 @@ Transform:
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
-<<<<<<< HEAD:Unity/Assets/Scenes/LivingRoom.unity
   m_PrefabParentObject: {fileID: 9500000, guid: a64ad69fa8b98394dba60f29321195de,
     type: 3}
   m_PrefabInternal: {fileID: 1751314263}
@@ -5986,7 +5936,6 @@ MeshFilter:
   m_GameObject: {fileID: 769749735}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &785171923
->>>>>>> Jareds-Newest-Branch!:Unity/Assets/Scenes/LivingRoomJared.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -6053,7 +6002,6 @@ Transform:
   m_LocalPosition: {x: -5.70491457, y: 72.5131149, z: 82.2382812}
   m_LocalScale: {x: 7.52812386, y: 1.79999995, z: 4.42438698}
   m_Children: []
-<<<<<<< HEAD:Unity/Assets/Scenes/LivingRoom.unity
   m_Father: {fileID: 1087863223}
   m_RootOrder: 17
 --- !u!1 &472796951
@@ -6206,7 +6154,6 @@ MeshFilter:
   m_GameObject: {fileID: 795024800}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &803428001
->>>>>>> Jareds-Newest-Branch!:Unity/Assets/Scenes/LivingRoomJared.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100002, guid: 96971fa79858aed4393be8fd2baa72ff, type: 3}
@@ -16880,7 +16827,6 @@ MeshFilter:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-<<<<<<< HEAD:Unity/Assets/Scenes/LivingRoom.unity
   m_GameObject: {fileID: 1639288676}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1642697673
@@ -16969,7 +16915,6 @@ MeshFilter:
   m_GameObject: {fileID: 1039833474}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1052885628
->>>>>>> Jareds-Newest-Branch!:Unity/Assets/Scenes/LivingRoomJared.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -18038,7 +17983,6 @@ GameObject:
   m_PrefabInternal: {fileID: 1990422315}
   serializedVersion: 4
   m_Component:
-<<<<<<< HEAD:Unity/Assets/Scenes/LivingRoom.unity
   - 4: {fileID: 1800689983}
   - 33: {fileID: 1800689985}
   - 23: {fileID: 1800689984}
@@ -18195,13 +18139,11 @@ GameObject:
   - 82: {fileID: 1262900481}
   m_Layer: 0
   m_Name: Dial
->>>>>>> Jareds-Newest-Branch!:Unity/Assets/Scenes/LivingRoomJared.unity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
-<<<<<<< HEAD:Unity/Assets/Scenes/LivingRoom.unity
 --- !u!4 &1800689983
 Transform:
   m_ObjectHideFlags: 0
@@ -18438,18 +18380,15 @@ Renderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1262900479}
->>>>>>> Jareds-Newest-Branch!:Unity/Assets/Scenes/LivingRoomJared.unity
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-<<<<<<< HEAD:Unity/Assets/Scenes/LivingRoom.unity
   - {fileID: 2100000, guid: 7ddb52eeb93c54e4d8bcd3f7ae3f3e58, type: 2}
 =======
   - {fileID: 2100000, guid: 104e8a416bc077e4a810f8d537cd438f, type: 2}
->>>>>>> Jareds-Newest-Branch!:Unity/Assets/Scenes/LivingRoomJared.unity
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -18457,7 +18396,6 @@ Renderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-<<<<<<< HEAD:Unity/Assets/Scenes/LivingRoom.unity
 --- !u!33 &1800689985
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -18502,7 +18440,6 @@ MeshFilter:
   m_GameObject: {fileID: 1262900479}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1285906741
->>>>>>> Jareds-Newest-Branch!:Unity/Assets/Scenes/LivingRoomJared.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100002, guid: abefd974829732447ae29ca60ca4a74d, type: 3}
@@ -19640,7 +19577,6 @@ MeshCollider:
 --- !u!1001 &1909500202
 Prefab:
   m_ObjectHideFlags: 0
-<<<<<<< HEAD:Unity/Assets/Scenes/LivingRoom.unity
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 2024460479}
@@ -19794,7 +19730,6 @@ Camera:
   m_StereoConvergence: 10
   m_StereoSeparation: .0219999999
 --- !u!1 &1652286413
->>>>>>> Jareds-Newest-Branch!:Unity/Assets/Scenes/LivingRoomJared.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -20592,7 +20527,6 @@ Renderer:
 --- !u!33 &1990527731
 MeshFilter:
   m_ObjectHideFlags: 0
-<<<<<<< HEAD:Unity/Assets/Scenes/LivingRoom.unity
   m_PrefabParentObject: {fileID: 3300012, guid: 1d204df1bf723d645a3ce8946a952fed,
     type: 3}
   m_PrefabInternal: {fileID: 452065399}
@@ -20729,7 +20663,6 @@ Prefab:
   m_GameObject: {fileID: 1880439627}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1906186785
->>>>>>> Jareds-Newest-Branch!:Unity/Assets/Scenes/LivingRoomJared.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100002, guid: d36c572871cffe244ab64171935e6537, type: 3}
@@ -21243,7 +21176,6 @@ MeshCollider:
 --- !u!1001 &2079009902
 Prefab:
   m_ObjectHideFlags: 0
-<<<<<<< HEAD:Unity/Assets/Scenes/LivingRoom.unity
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 1149357756}
@@ -21354,7 +21286,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camera1: {fileID: 1643976968}
 --- !u!1 &1962389861
->>>>>>> Jareds-Newest-Branch!:Unity/Assets/Scenes/LivingRoomJared.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100016, guid: a16d169d7de88f3419aae3753eabbf6f, type: 3}
@@ -21524,7 +21455,6 @@ Transform:
   m_LocalPosition: {x: 1.63999999, y: 74.0999985, z: 61.6100006}
   m_LocalScale: {x: .0299249142, y: .0302481055, z: .0234962627}
   m_Children:
-<<<<<<< HEAD:Unity/Assets/Scenes/LivingRoom.unity
   - {fileID: 269112225}
   m_Father: {fileID: 2024460479}
   m_RootOrder: 1
@@ -21620,7 +21550,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 139ffd912eaedef4abf1e1e7ca75346c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
->>>>>>> Jareds-Newest-Branch!:Unity/Assets/Scenes/LivingRoomJared.unity
 --- !u!1 &2124497971
 GameObject:
   m_ObjectHideFlags: 0
@@ -21770,11 +21699,9 @@ Transform:
   m_LocalScale: {x: 1.38909268, y: 1.47363436, z: 1.17691815}
   m_Children: []
   m_Father: {fileID: 883110862}
-<<<<<<< HEAD:Unity/Assets/Scenes/LivingRoom.unity
   m_RootOrder: 12
 =======
   m_RootOrder: 7
->>>>>>> Jareds-Newest-Branch!:Unity/Assets/Scenes/LivingRoomJared.unity
 --- !u!23 &2143439781
 Renderer:
   m_ObjectHideFlags: 0

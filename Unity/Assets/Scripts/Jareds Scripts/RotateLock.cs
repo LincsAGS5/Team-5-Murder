@@ -296,7 +296,7 @@ public class RotateLock : MonoBehaviour
 
     public void RotateLeft()
     {
-<<<<<<< HEAD:Unity/Assets/JaredsStuff/Scripts/RotateLock.cs
+//<<<<<<< HEAD:Unity/Assets/JaredsStuff/Scripts/RotateLock.cs
         rotateLeft = true;
         rotateRight = false;
         Invoke("stopRotate", 1.445f);
@@ -304,24 +304,23 @@ public class RotateLock : MonoBehaviour
         guiOn = false;
         Invoke("ButtonReappear", 1.35f);
         rotationStart += rotationIncrease;
-=======
 		
 
-        if (guiOn == true)
-        {
-            GUI.contentColor = Color.black; 
+//        if (guiOn == true)
+//        {
+//            GUI.contentColor = Color.black; 
 
-            GUI.skin.font = largeText;
+//            GUI.skin.font = largeText;
 
-            GUI.Label(new Rect(170, 250, 200, 100), "Your Hovering over Code Number: " + code.ToString());
-            GUI.skin.font = smallText;
+//            GUI.Label(new Rect(170, 250, 200, 100), "Your Hovering over Code Number: " + code.ToString());
+//            GUI.skin.font = smallText;
 
             
 
-            GUI.Label(new Rect(120, 500, 340, 30), "This is just for demostration: Code is: 7, 21, 14");
+//            GUI.Label(new Rect(120, 500, 340, 30), "This is just for demostration: Code is: 7, 21, 14");
 
-            GUI.contentColor = Color.white; 
->>>>>>> Jareds-Newest-Branch!:Unity/Assets/Scripts/Jareds Scripts/RotateLock.cs
+//            GUI.contentColor = Color.white; 
+//>>>>>>> Jareds-Newest-Branch!:Unity/Assets/Scripts/Jareds Scripts/RotateLock.cs
 
         codeHelper -= 1;
 

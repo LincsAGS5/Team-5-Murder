@@ -283,6 +283,55 @@ public class RotateLock : MonoBehaviour
         rotateLeft = false;
     }
 
+    public void RotateRight()
+    {
+        rotateRight = true;
+        rotateLeft = false;
+
+        Invoke("stopRotate", 1.445f);
+        guiOn = false;
+
+        Invoke("ButtonReappear", 1.35f);
+        rotationStart += rotationIncrease;
+
+        codeHelper += 1;
+
+        if (codeHelper > 125)
+        {
+            codeHelper = 100;
+        }
+
+
+        //this.GetComponent<AudioSource>().Play();
+        noise1.Play();
+
+
+        //audio.PlayOneShot(clickSound, 0.9f);
+
+    }
+
+    public void RotateLeft()
+    {
+        rotateLeft = true;
+        rotateRight = false;
+        Invoke("stopRotate", 1.445f);
+
+        guiOn = false;
+        Invoke("ButtonReappear", 1.35f);
+        rotationStart += rotationIncrease;
+
+        codeHelper -= 1;
+
+
+        if (codeHelper < 75)
+        {
+            codeHelper = 100;
+        }
+        noise1.Play();
+
+
+    }
+
 
     void OnGUI()
     {
@@ -295,52 +344,12 @@ public class RotateLock : MonoBehaviour
 
             if (GUI.Button(new Rect(320, 630, 110, 30), "Rotate Right"))
             {
-			
-                rotateRight = true;
-                rotateLeft = false;
-
-                Invoke("stopRotate", 1.445f);
-                guiOn = false;
-
-                Invoke("ButtonReappear", 1.35f);
-				rotationStart += rotationIncrease;
-
-                codeHelper += 1;
-
-                if (codeHelper > 125)
-                {
-                    codeHelper = 100;
-                }
-
-
-				//this.GetComponent<AudioSource>().Play();
-				noise1.Play();
-
-
-				//audio.PlayOneShot(clickSound, 0.9f);
-
+                RotateRight();
             }
 
             if (GUI.Button(new Rect(60, 630, 110, 30), "Rotate Left"))
             {
-                rotateLeft = true;
-                rotateRight = false;
-                Invoke("stopRotate", 1.445f);
-
-                guiOn = false;
-                Invoke("ButtonReappear", 1.35f);
-				rotationStart += rotationIncrease;
-
-                codeHelper -= 1;
-
-
-                if (codeHelper < 75)
-                {
-                    codeHelper = 100;
-                }
-				noise1.Play();
-
-
+                RotateLeft();
             }
         }
 

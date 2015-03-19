@@ -5,7 +5,9 @@ public class OpenDoor : MonoBehaviour
 {
 
   public  bool SlideOpenTheDoor = false;
-	public AudioClip doorOpen;
+  public AudioClip doorOpen;
+  public static bool guiOn = true;
+  public Font smallText;
 
     float WaitTime = 3;
 
@@ -27,7 +29,7 @@ public class OpenDoor : MonoBehaviour
     {
 
         SlideOpenTheDoor = true;
-        Invoke("StopDoor", 4); 
+        Invoke("StopDoor", 4.3f); 
 		this.GetComponent<AudioSource>().Play();
     }
 
@@ -40,15 +42,20 @@ public class OpenDoor : MonoBehaviour
             transform.Translate(Vector3.right * Time.deltaTime);
         }
 
-       // Invoke ("StopDoor", 4); 
 	}
 
     void OnGUI()
     {
-        if (GUI.Button(new Rect(175, 540, 140, 30), "Force the Door Open!"))
+
+        if (guiOn == true)
         {
 
-            OpenTheDoor();
+            GUI.skin.font = smallText;
+            if (GUI.Button(new Rect(175, 540, 140, 30), "Force the Door Open!"))
+            {
+
+                OpenTheDoor();
+            }
         }
     }
 

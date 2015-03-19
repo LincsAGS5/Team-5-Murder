@@ -26,14 +26,18 @@ public class ExamineObject : MonoBehaviour {
 					{
                         ItemDescription.GetComponent<Text>().text = "\nDining chairs surround the table in the centre.";
 					}
-					if (hit.collider.name == "Table")
+					if (hit.collider.name == "Dinner Table")
 					{
                         ItemDescription.GetComponent<Text>().text = "\nAn empty wooden dining table.";
 					}                
-                    if (hit.collider.name == "Small Table")
+                    if (hit.collider.name == "Coffee Table")
 					{
-                        ItemDescription.GetComponent<Text>().text = "\nA small table for drinks by the fire.";
+                        ItemDescription.GetComponent<Text>().text = "\nA coffee table for drinks by the fire.";
 					}
+                    if (hit.collider.name == "Drawers")
+                    {
+                        ItemDescription.GetComponent<Text>().text = "\nA set of drawers filled with clothing.";
+                    }
 					/*if (hit.collider.name == "Wine Glass")
 					{
                         ItemDescription.GetComponent<Text>().text = "\nThis object is a wine glass.";
@@ -46,6 +50,10 @@ public class ExamineObject : MonoBehaviour {
 					{
                         ItemDescription.GetComponent<Text>().text = "\nComfy looking living room seating.";
 					}
+                    if (hit.collider.name == "Lamp")
+                    {
+                        ItemDescription.GetComponent<Text>().text = "\nA bedside lamp used for reading on a night.";
+                    }
 					if (hit.collider.name == "Cooker")
 					{
                         ItemDescription.GetComponent<Text>().text = "\nA black, electic cooker. \nNothing's cooking in the oven.";
@@ -58,13 +66,17 @@ public class ExamineObject : MonoBehaviour {
 					{
                         ItemDescription.GetComponent<Text>().text = "\nA polished black-stone kitchen counter. It is as clean as a whistle.";
 					}
-                    if (hit.collider.name == "Kitchen Cupboard")
+                    if (hit.collider.name == "Bottom Cupboards")
                     {
                         ItemDescription.GetComponent<Text>().text = "\nKitchen cupboards filled with utensils.";
                     }
 					if (hit.collider.name == "Sink")
 					{
                         ItemDescription.GetComponent<Text>().text = "\nThe kitchen sink, made from stainless steel.";
+					}
+					if (hit.collider.name == "Bathroom Sink")
+					{
+						ItemDescription.GetComponent<Text>().text = "\nThe bathroom sink, made from white ceramic.";
 					}
 					if (hit.collider.name == "Logs")
 					{
@@ -113,9 +125,9 @@ public class ExamineObject : MonoBehaviour {
 					{
                         ItemDescription.GetComponent<Text>().text = "\nA cream sheeted, king sized bed, with a dark wooden finish.";
 					}
-					if (hit.collider.name == "Cupboard")
+					if (hit.collider.name == "Bedside Table")
 					{
-                        ItemDescription.GetComponent<Text>().text = "\nA hardwood cupboard filled with clothes.";
+                        ItemDescription.GetComponent<Text>().text = "\nA bedside table with 3 drawers.";
 					}
                     if (hit.collider.name == "Wardrobe")
 					{
@@ -141,6 +153,18 @@ public class ExamineObject : MonoBehaviour {
                     {
                         ItemDescription.GetComponent<Text>().text = "\nA glass paned window.";
                     }
+                    if (hit.collider.name == "Curtains")
+                    {
+                        ItemDescription.GetComponent<Text>().text = "\nA set of curtains hung infront of the window.";
+                    }
+					if (hit.collider.name == "Lamp")
+					{
+						ItemDescription.GetComponent<Text>().text = "\nA set of curtains hung infront of the window.";
+					}
+					if (hit.collider.name == "Coat Hanger")
+					{
+						ItemDescription.GetComponent<Text>().text = "\nAn empty coat hanger stood by the front door.";
+					}
 					if (hit.collider.name == "Book")
 					{
 						GameLogText.GetComponent<Text>().text = GameLogText.GetComponent<Text>().text + "\nA book with the title \"Modern Warfare\". Is that a reference to something?\n";

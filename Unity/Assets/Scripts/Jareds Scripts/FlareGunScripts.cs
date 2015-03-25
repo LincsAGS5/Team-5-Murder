@@ -19,6 +19,7 @@ public class FlareGunScripts : MonoBehaviour
     void OnMouseDown()
     {
         Application.LoadLevel(1);
+		Debug.Log ("Gun Clicked");
     }
 
 

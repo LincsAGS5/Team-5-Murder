@@ -1,30 +1,25 @@
 fileFormatVersion: 2
-guid: ac141b4446bbcff44afa3d49a1b25191
+guid: 3c81e6c88b57e1f4cbbaaa0372aec517
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
-    100000: pillow_01
-    100002: pillow_02
-    100004: pillow_03
-    100006: pillow_04
-    100008: //RootNode
-    400000: pillow_01
-    400002: pillow_02
-    400004: pillow_03
-    400006: pillow_04
-    400008: //RootNode
-    2300000: pillow_01
-    2300002: pillow_02
-    2300004: pillow_03
-    2300006: pillow_04
-    3300000: pillow_01
-    3300002: pillow_02
-    3300004: pillow_03
-    3300006: pillow_04
-    4300000: pillow_01
-    4300002: pillow_02
-    4300004: pillow_03
-    4300006: pillow_04
+    100000: //RootNode
+    100002: Cylinder2_Cylinder2_auv
+    100004: Cylinder2_default
+    100006: Cylinder2_Legs
+    400000: //RootNode
+    400002: Cylinder2_Cylinder2_auv
+    400004: Cylinder2_default
+    400006: Cylinder2_Legs
+    2300000: Cylinder2_Cylinder2_auv
+    2300002: Cylinder2_default
+    2300004: Cylinder2_Legs
+    3300000: Cylinder2_Cylinder2_auv
+    3300002: Cylinder2_default
+    3300004: Cylinder2_Legs
+    4300000: Cylinder2_Cylinder2_auv
+    4300002: Cylinder2_default
+    4300004: Cylinder2_Legs
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -45,7 +40,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: .00999999978
+    globalScale: 1
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1

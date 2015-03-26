@@ -1,30 +1,45 @@
 fileFormatVersion: 2
-guid: ac141b4446bbcff44afa3d49a1b25191
+guid: dc35b042f33b6c74f882344f6e40b897
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
-    100000: pillow_01
-    100002: pillow_02
-    100004: pillow_03
-    100006: pillow_04
-    100008: //RootNode
-    400000: pillow_01
-    400002: pillow_02
-    400004: pillow_03
-    400006: pillow_04
-    400008: //RootNode
-    2300000: pillow_01
-    2300002: pillow_02
-    2300004: pillow_03
-    2300006: pillow_04
-    3300000: pillow_01
-    3300002: pillow_02
-    3300004: pillow_03
-    3300006: pillow_04
-    4300000: pillow_01
-    4300002: pillow_02
-    4300004: pillow_03
-    4300006: pillow_04
+    100000: Cylinder16_default2
+    100002: Cylinder2_sep6_Base
+    100004: Cylinder2_sep6_Bowl
+    100006: Cylinder2_sep6_Cistern
+    100008: Cylinder2_sep6_default
+    100010: Cylinder2_sep6_Stand
+    100012: Cylinder2_sep6_Water
+    100014: //RootNode
+    400000: Cylinder16_default2
+    400002: Cylinder2_sep6_Base
+    400004: Cylinder2_sep6_Bowl
+    400006: Cylinder2_sep6_Cistern
+    400008: Cylinder2_sep6_default
+    400010: Cylinder2_sep6_Stand
+    400012: Cylinder2_sep6_Water
+    400014: //RootNode
+    2300000: Cylinder16_default2
+    2300002: Cylinder2_sep6_Base
+    2300004: Cylinder2_sep6_Bowl
+    2300006: Cylinder2_sep6_Cistern
+    2300008: Cylinder2_sep6_default
+    2300010: Cylinder2_sep6_Stand
+    2300012: Cylinder2_sep6_Water
+    3300000: Cylinder16_default2
+    3300002: Cylinder2_sep6_Base
+    3300004: Cylinder2_sep6_Bowl
+    3300006: Cylinder2_sep6_Cistern
+    3300008: Cylinder2_sep6_default
+    3300010: Cylinder2_sep6_Stand
+    3300012: Cylinder2_sep6_Water
+    4300000: Cylinder16_default2
+    4300002: Cylinder2_sep6_Base
+    4300004: Cylinder2_sep6_Bowl
+    4300006: Cylinder2_sep6_Cistern
+    4300008: Cylinder2_sep6_default
+    4300010: Cylinder2_sep6_Stand
+    4300012: Cylinder2_sep6_Water
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -45,7 +60,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: .00999999978
+    globalScale: 1
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1

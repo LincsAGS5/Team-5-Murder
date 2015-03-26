@@ -411,6 +411,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SlideOpenThePainting: 0
+  openPainting: 0
 --- !u!1 &21180063
 GameObject:
   m_ObjectHideFlags: 0

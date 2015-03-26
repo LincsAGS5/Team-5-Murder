@@ -47,16 +47,16 @@ public class OpenDoor : MonoBehaviour
     void OnGUI()
     {
 
-        if (guiOn == true)
-        {
+        //if (guiOn == true)
+        //{
 
-            GUI.skin.font = smallText;
-            if (GUI.Button(new Rect(175, 540, 140, 30), "Force the Door Open!"))
-            {
+        //    GUI.skin.font = smallText;
+        //    if (GUI.Button(new Rect(175, 540, 140, 30), "Force the Door Open!"))
+        //    {
 
-                OpenTheDoor();
-            }
-        }
+        //        OpenTheDoor();
+        //    }
+        //}
     }
 
 

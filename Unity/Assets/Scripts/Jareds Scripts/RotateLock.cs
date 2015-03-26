@@ -390,62 +390,62 @@ public class RotateLock : MonoBehaviour
             if (GUI.Button(new Rect(190, 580, 110, 30), "Log Number"))
             {
 
-
-
-                if (code == 7)
-                {
-                    codeNum1 = true;
-					noise2.Play();
-                }
-                if (code == 21 && codeNum1 == true)
-                {
-                    codeNum2 = true;
-					noise2.Play();
-                }
-				if (code == 14 && codeNum2 == true)
-                {
-                    codeNum3 = true;
-					noise2.Play();
-                }
-				if (code == 21 )
-				{
-
-					noise3.Play();
-				}
-				if (code == 14)
-				{
-
-					noise3.Play();
-				}
-				if (code == 14 && codeNum1 == true && codeNum2 == false)
-				{
-					noise3.Play();
-					codeNum1 = false;
-				}
-
-
-
-
-                if (codeNum1 == true && codeNum2 == true && codeNum3 == true)
-                {
-                    dial.GetComponentInParent<OpenDoor>().OpenTheDoor();
-
-                }
-
-
-				if (code == 0 || code == 2 || code == 3 || code == 5 || code == 6 || code == 8 || code == 9 || code == 10 || code == 11 || code == 12 || code == 13 || code == 4 || code == 15 || code == 16 || code == 17 || code == 18 || code == 19 || code == 20 || code == 1 || code == 22 || code == 23 || code == 24 || code == 25 || code == 26)
-                {
-
-                    codeNum1 = false;
-                    codeNum2 = false;
-                    codeNum3 = false;
-					noise3.Play ();
-
-
-
-                }
             }
         }
 
+    }
+
+    public void dialUnlock()
+    {
+        if (code == 7)
+        {
+            codeNum1 = true;
+            noise2.Play();
+        }
+
+        if (code == 21 && codeNum1 == true)
+        {
+            codeNum2 = true;
+            noise2.Play();
+        }
+
+        if (code == 14 && codeNum2 == true)
+        {
+            codeNum3 = true;
+            noise2.Play();
+        }
+
+        if (code == 21)
+        {
+
+            noise3.Play();
+        }
+
+        if (code == 14)
+        {
+
+            noise3.Play();
+        }
+
+        if (code == 14 && codeNum1 == true && codeNum2 == false)
+        {
+            noise3.Play();
+            codeNum1 = false;
+        }
+
+        if (codeNum1 == true && codeNum2 == true && codeNum3 == true)
+        {
+            dial.GetComponentInParent<OpenDoor>().OpenTheDoor();
+
+        }
+
+        if (code == 0 || code == 2 || code == 3 || code == 5 || code == 6 || code == 8 || code == 9 || code == 10 || code == 11 || code == 12 || code == 13 || code == 4 || code == 15 || code == 16 || code == 17 || code == 18 || code == 19 || code == 20 || code == 1 || code == 22 || code == 23 || code == 24 || code == 25 || code == 26)
+        {
+
+            codeNum1 = false;
+            codeNum2 = false;
+            codeNum3 = false;
+            noise3.Play();
+        }
     }
 }

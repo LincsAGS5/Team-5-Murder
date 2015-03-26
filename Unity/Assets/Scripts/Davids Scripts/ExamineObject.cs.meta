@@ -2,7 +2,12 @@ fileFormatVersion: 2
 guid: 9180be9094ec5f84b8414ca63e8a8358
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - GameLogText: {instanceID: 0}
+  - ItemDescription: {instanceID: 0}
+  - largeText: {fileID: 12800000, guid: 3374f59e7811f7f49bbe25cc664f9c60, type: 3}
+  - smallText: {fileID: 12800000, guid: 3374f59e7811f7f49bbe25cc664f9c60, type: 3}
+  - painting: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

@@ -146,6 +146,11 @@ public class PlayerMove : MonoBehaviour
                     canRotate = true;
                 }
             }
+
+            if (inputInfo.Features.DistanceBetweenHands > 0.7)
+            {
+                rl.dialUnlock();
+            }
             //this.transform.rotation = new Quaternion(0, 0, inputInfo.Features.Angle,0);
             Debug.Log(inputInfo.Features.Angle);
         }

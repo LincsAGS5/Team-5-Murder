@@ -10,6 +10,10 @@ public class ExamineObject : MonoBehaviour {
     public Font largeText;
     public Font smallText;
 
+    PlayerMove pm;
+    Camera lc;
+    MovePainting mp;
+
 
     public static bool leaveButton = false;
 
@@ -25,6 +29,10 @@ public class ExamineObject : MonoBehaviour {
         RotateLock.guiOn = false;
         OpenDoor.guiOn = false;
         leaveButton = false;
+
+        pm = GameObject.Find("Player").GetComponent<PlayerMove>();
+        lc = GameObject.Find("Lock Camera").GetComponent<Camera>();
+        mp = GameObject.Find("Painting").GetComponent<MovePainting>();
 	}
 	
 	// Update is called once per frame
@@ -175,14 +183,19 @@ public class ExamineObject : MonoBehaviour {
 						GameLogText.GetComponent<Text>().text = GameLogText.GetComponent<Text>().text + "\nA crooked painting on the wall. Behind it is a safe! Now what is the combination?\n";
                         ItemDescription.GetComponent<Text>().text = "\nA crooked painting on the wall. Behind it is a safe! Now what is the combination?";
                         SelectedObject = hit.collider.gameObject;
-                        CameraSwitch.Lockoff = 1;
-                        RotateLock.guiOn = true;
-                        OpenDoor.guiOn = true;
+                        //CameraSwitch.Lockoff = 1;
+                        //RotateLock.guiOn = true;
+                        //OpenDoor.guiOn = true;
 
-                        PlayerMove pm = GameObject.Find("Player").GetComponent<PlayerMove>();
+                        
 
                         pm.canLock = true;
                         pm.canMove = false;
+
+                        lc.enabled = true;
+
+                        mp.openPainting = true;
+
 
                        // leaveButton = true;
                    //     MovePainting.OpenthePainting = 1;

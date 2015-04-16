@@ -1,18 +1,33 @@
 fileFormatVersion: 2
-guid: d36c572871cffe244ab64171935e6537
+guid: a6c5ba63e99dbbe4fa6d335ccbd9bf00
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
     100000: //RootNode
-    100002: Dinner_table
+    100002: sphere1_Cold
+    100004: sphere1_Hot
+    100006: sphere1_Metal
+    100008: sphere1_sphere1_auv
     400000: //RootNode
-    400002: Dinner_table
-    2300000: Dinner_table
-    3300000: Dinner_table
-    4300000: Dinner_table
+    400002: sphere1_Cold
+    400004: sphere1_Hot
+    400006: sphere1_Metal
+    400008: sphere1_sphere1_auv
+    2300000: sphere1_Cold
+    2300002: sphere1_Hot
+    2300004: sphere1_Metal
+    2300006: sphere1_sphere1_auv
+    3300000: sphere1_Cold
+    3300002: sphere1_Hot
+    3300004: sphere1_Metal
+    3300006: sphere1_sphere1_auv
+    4300000: sphere1_Cold
+    4300002: sphere1_Hot
+    4300004: sphere1_Metal
+    4300006: sphere1_sphere1_auv
     9500000: //RootNode
   materials:
-    importMaterials: 1
+    importMaterials: 0
     materialName: 0
     materialSearch: 1
   animations:
@@ -62,6 +77,6 @@ ModelImporter:
     feetSpacing: 0
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   additionalBone: 0
   userData: 

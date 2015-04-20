@@ -4,18 +4,17 @@ using System.Collections;
 public class scrInteractive : MonoBehaviour
 {
 	public GameObject Player;
-	public float Distance;
 	public bool Sharp;
 
-	// Use this for initialization
-	void Start ()
+	public void SetHighlight(bool value)
 	{
+		if (renderer != null)
+			renderer.material.SetInt("_Selected", value ? (Sharp ? 2 : 1) : 0);
 
-	}
-	
-	// Update is called once per frame
-	void Update ()
-	{
-		renderer.material.SetInt("_Selected", (Vector3.Distance(transform.position, Player.transform.position) < Distance) ? (Sharp ? 2 : 1) : 0);
+		foreach (Renderer r in GetComponentsInChildren<Renderer>())
+		{
+			if (r.material.HasProperty("_Selected"))
+				r.material.SetInt("_Selected", value ? (Sharp ? 2 : 1) : 0);
+		}
 	}
 }

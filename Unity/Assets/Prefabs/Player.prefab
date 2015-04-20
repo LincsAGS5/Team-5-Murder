@@ -12,7 +12,8 @@ GameObject:
   - 92: {fileID: 9204898}
   - 124: {fileID: 12404898}
   - 81: {fileID: 8104898}
-  m_Layer: 0
+  - 114: {fileID: 11487984}
+  m_Layer: 2
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -34,7 +35,7 @@ GameObject:
   - 65: {fileID: 6504898}
   - 114: {fileID: 11404898}
   - 114: {fileID: 11404894}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47,7 +48,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 104896}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: .087155737, y: 0, z: 0, w: .99619472}
   m_LocalPosition: {x: 0, y: 1.01200008, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -213,6 +214,20 @@ MonoBehaviour:
   largeText: {fileID: 12800000, guid: 3374f59e7811f7f49bbe25cc664f9c60, type: 3}
   smallText: {fileID: 12800000, guid: 3374f59e7811f7f49bbe25cc664f9c60, type: 3}
   painting: {fileID: 0}
+--- !u!114 &11487984
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 104896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2ba42ec62b7925419cd579f9dd42075, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Cursor: {fileID: 0}
+  Distance: 5
+  Radius: .100000001
 --- !u!124 &12404898
 Behaviour:
   m_ObjectHideFlags: 1

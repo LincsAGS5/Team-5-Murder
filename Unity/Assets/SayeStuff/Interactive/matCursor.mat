@@ -6,8 +6,8 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Cylinder2_sep6_StandMat
-  m_Shader: {fileID: 4800000, guid: a3906638ecf823843be7f3452de1039f, type: 3}
+  m_Name: matCursor
+  m_Shader: {fileID: 4800000, guid: 3e00a9633bdf44748b9e3817c73d9ab0, type: 3}
   m_ShaderKeywords: []
   m_CustomRenderQueue: -1
   m_SavedProperties:
@@ -17,38 +17,34 @@ Material:
         first:
           name: _MainTex
         second:
-          m_Texture: {fileID: 0}
+          m_Texture: {fileID: 2800000, guid: c6e0767b1f8c34890ac245217f4b9731, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
         first:
           name: _BumpMap
         second:
-          m_Texture: {fileID: 2800000, guid: 0848b713df0f4224691ee993dcd5a35f, type: 3}
+          m_Texture: {fileID: 2800000, guid: 90f59e08a4b5b404abf7f3a19ddaf821, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
     m_Floats:
       data:
         first:
-          name: _Shininess
-        second: .350782961
-      data:
-        first:
           name: _GlowDistance
-        second: .0199999996
+        second: .100000001
       data:
         first:
           name: _Selected
-        second: 0
+        second: 2
     m_Colors:
       data:
         first:
           name: _Color
-        second: {r: .654411793, g: .654411793, b: .654411793, a: 1}
+        second: {r: .944827557, g: 1, b: 0, a: 1}
       data:
         first:
-          name: _SpecColor
-        second: {r: .875, g: .85370183, b: .746323526, a: 1}
+          name: _Emission
+        second: {r: .698529422, g: .526234925, b: .308174759, a: 1}
       data:
         first:
           name: _MainColor
@@ -56,4 +52,8 @@ Material:
       data:
         first:
           name: _GlowColor
-        second: {r: 1, g: 1, b: 0, a: .219607845}
+        second: {r: .632352948, g: .802231252, b: 1, a: .737254918}
+      data:
+        first:
+          name: _GlowColour
+        second: {r: 1, g: 1, b: 1, a: 1}

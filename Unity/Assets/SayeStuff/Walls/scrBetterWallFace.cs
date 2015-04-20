@@ -7,7 +7,6 @@ public class scrBetterWallFace : MonoBehaviour
 	private static string[] textureNames = new string[] { "_MainTex", "_BumpMap" };
 
 	public Vector2 FixedScale = Vector2.one;
-	public Vector2 FixedOffset = Vector2.zero;
 
 	void Awake ()
 	{
@@ -22,7 +21,6 @@ public class scrBetterWallFace : MonoBehaviour
 				scale.x = transform.lossyScale.x * scale.x / FixedScale.x;
 				scale.y =  transform.lossyScale.y * scale.y / FixedScale.y;
 				renderer.material.SetTextureScale(texture, scale);
-				renderer.material.SetTextureOffset(texture, FixedOffset);
 			}
 		}
 

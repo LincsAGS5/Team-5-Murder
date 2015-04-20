@@ -11,7 +11,7 @@
 	}
 	SubShader
 	{
-		Tags { "Queue"="Transparent" "RenderType"="Transparent" }
+		Tags { "Queue"="Transparent-1" "RenderType"="Transparent" }
 		
 		Blend SrcAlpha One
 		ZWrite Off
@@ -85,7 +85,7 @@
 			
 			// If selected, create a glow from the edges of the object inwards, based on their normals.
 			if (_Selected != 0)
-				o.Emission = _GlowColor.rgb * pow(1.0 - dot(normalize(IN.viewDir), o.Normal), (1.0 - _GlowColor.a) * 10.0f);
+				o.Emission = 2 * _GlowColor.rgb * pow(1.0 - dot(normalize(IN.viewDir), o.Normal), 2);
 		}
 		ENDCG
 	} 

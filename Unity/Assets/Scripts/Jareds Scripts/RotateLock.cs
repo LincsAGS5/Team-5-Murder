@@ -364,7 +364,7 @@ public class RotateLock : MonoBehaviour
     void OnGUI()
     {
 		GUI.skin.font = largeText;
-		GUI.Label(new Rect(150,300,200,100), "Your Hovering over Code Number: " + code.ToString());
+		// GUI.Label(new Rect(150,300,200,100), "Your Hovering over Code Number: " + code.ToString());
 		GUI.skin.font = smallText;
 
         if (guiOn == true)

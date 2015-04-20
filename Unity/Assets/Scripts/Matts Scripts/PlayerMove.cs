@@ -30,6 +30,7 @@ public class PlayerMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+		this.GetComponentInChildren<scrPlaceCursor>().SetHands(Input.GetKey(KeyCode.W));
         //if (controllerEnabled == true)
         //{
         //    if (Input.GetAxis("Joystick Triggers") > 0.05)
@@ -101,10 +102,7 @@ public class PlayerMove : MonoBehaviour
                 this.transform.Translate(0, 0, 0.01f);
             }
 
-            if (inputInfo.Features.DistanceBetweenHands > 0.7)
-            {
-                this.GetComponent<ExamineObject>().Interact();
-            }
+			this.GetComponentInChildren<scrPlaceCursor>().SetHands(inputInfo.Features.DistanceBetweenHands > 0.7);
             //this.transform.rotation = new Quaternion(0, 0, inputInfo.Features.Angle,0);
             //Debug.Log(inputInfo.Features.Angle);
 

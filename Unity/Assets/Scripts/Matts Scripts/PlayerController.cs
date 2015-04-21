@@ -13,6 +13,8 @@ public class PlayerController : MonoBehaviour
 
     public bool canMove = true;
 
+    Vector2 playerPos;
+
 	// Use this for initialization
 	void Start ()
 	{
@@ -26,7 +28,7 @@ public class PlayerController : MonoBehaviour
         if (canMove == true)
         {
 
-            this.transform.Translate(Vector3.up * 0.01f);
+            //this.transform.Translate(Vector3.up * 0.01f);
 
             if (controllerEnabled == true)
             {
@@ -57,15 +59,22 @@ public class PlayerController : MonoBehaviour
             if (kinectEnabled == true)
             {
 
+                playerPos = inputInfo.Features.Position;
+
                 if (inputInfo.Features.Angle > 5)
                 {
                     //this.transform.rotation = new Quaternion(0, 0, this.transform.rotation.z + inputInfo.Features.Angle, 0.1f);
-                    this.transform.Rotate(Vector3.back * (inputInfo.Features.Angle / 20));
+                    this.transform.Rotate(Vector3.right * (inputInfo.Features.Angle / 20));
                 }
                 else if (inputInfo.Features.Angle < -5)
                 {
                     //this.transform.rotation = Quaternion(0, 0, this.transform.rotation.z + inputInfo.Features.Angle, 0.1f);
-                    this.transform.Rotate(Vector3.back * (inputInfo.Features.Angle / 20));
+                    this.transform.Rotate(Vector3.left * (inputInfo.Features.Angle / 20));
+                }
+
+                if (inputInfo.Features.Position.y > playerPos.y + 0.2)
+                {
+                    //this.transform
                 }
                 //this.transform.rotation = new Quaternion(0, 0, inputInfo.Features.Angle,0);
                 Debug.Log(inputInfo.Features.Angle);

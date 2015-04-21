@@ -294,74 +294,90 @@ public class RotateLock : MonoBehaviour
         rotateLeft = false;
     }
 
-
-    void OnGUI()
+    public void RotateLeft()
     {
+//<<<<<<< HEAD:Unity/Assets/JaredsStuff/Scripts/RotateLock.cs
+        rotateLeft = true;
+        rotateRight = false;
+        Invoke("stopRotate", 1.445f);
+
+        guiOn = false;
+        Invoke("ButtonReappear", 1.35f);
+        rotationStart += rotationIncrease;
 		
 
-        if (guiOn == true)
-        {
-            GUI.contentColor = Color.black; 
+//        if (guiOn == true)
+//        {
+//            GUI.contentColor = Color.black; 
 
-            GUI.skin.font = largeText;
+//            GUI.skin.font = largeText;
 
-            GUI.Label(new Rect(170, 250, 200, 100), "Your Hovering over Code Number: " + code.ToString());
-            GUI.skin.font = smallText;
+//            GUI.Label(new Rect(170, 250, 200, 100), "Your Hovering over Code Number: " + code.ToString());
+//            GUI.skin.font = smallText;
 
             
 
-            GUI.Label(new Rect(120, 500, 340, 30), "This is just for demostration: Code is: 7, 21, 14");
+//            GUI.Label(new Rect(120, 500, 340, 30), "This is just for demostration: Code is: 7, 21, 14");
 
-            GUI.contentColor = Color.white; 
+//            GUI.contentColor = Color.white; 
+//>>>>>>> Jareds-Newest-Branch!:Unity/Assets/Scripts/Jareds Scripts/RotateLock.cs
+
+        codeHelper -= 1;
+
+
+        if (codeHelper < 75)
+        {
+            codeHelper = 100;
+        }
+        noise1.Play();
+    }
+
+    public void RotateRight()
+    {
+
+        rotateRight = true;
+        rotateLeft = false;
+
+        Invoke("stopRotate", 1.445f);
+        guiOn = false;
+
+        Invoke("ButtonReappear", 1.35f);
+        rotationStart += rotationIncrease;
+
+        codeHelper += 1;
+
+        if (codeHelper > 125)
+        {
+            codeHelper = 100;
+        }
+
+
+        //this.GetComponent<AudioSource>().Play();
+        noise1.Play();
+
+
+        //audio.PlayOneShot(clickSound, 0.9f);
+
+    }
+
+
+    void OnGUI()
+    {
+		GUI.skin.font = largeText;
+		// GUI.Label(new Rect(150,300,200,100), "Your Hovering over Code Number: " + code.ToString());
+		GUI.skin.font = smallText;
+
+        if (guiOn == true)
+        {
 
             if (GUI.Button(new Rect(320, 630, 110, 30), "Rotate Right"))
             {
-			
-                rotateRight = true;
-                rotateLeft = false;
-
-                Invoke("stopRotate", 1.445f);
-                guiOn = false;
-
-                Invoke("ButtonReappear", 1.35f);
-				rotationStart += rotationIncrease;
-
-                codeHelper += 1;
-
-                if (codeHelper > 125)
-                {
-                    codeHelper = 100;
-                }
-
-
-				//this.GetComponent<AudioSource>().Play();
-				noise1.Play();
-
-
-				//audio.PlayOneShot(clickSound, 0.9f);
-
+                RotateRight();
             }
 
             if (GUI.Button(new Rect(60, 630, 110, 30), "Rotate Left"))
             {
-                rotateLeft = true;
-                rotateRight = false;
-                Invoke("stopRotate", 1.445f);
-
-                guiOn = false;
-                Invoke("ButtonReappear", 1.35f);
-				rotationStart += rotationIncrease;
-
-                codeHelper -= 1;
-
-
-                if (codeHelper < 75)
-                {
-                    codeHelper = 100;
-                }
-				noise1.Play();
-
-
+                RotateLeft();
             }
         }
 
@@ -374,62 +390,62 @@ public class RotateLock : MonoBehaviour
             if (GUI.Button(new Rect(190, 580, 110, 30), "Log Number"))
             {
 
-
-
-                if (code == 7)
-                {
-                    codeNum1 = true;
-					noise2.Play();
-                }
-                if (code == 21 && codeNum1 == true)
-                {
-                    codeNum2 = true;
-					noise2.Play();
-                }
-				if (code == 14 && codeNum2 == true)
-                {
-                    codeNum3 = true;
-					noise2.Play();
-                }
-				if (code == 21 )
-				{
-
-					noise3.Play();
-				}
-				if (code == 14)
-				{
-
-					noise3.Play();
-				}
-				if (code == 14 && codeNum1 == true && codeNum2 == false)
-				{
-					noise3.Play();
-					codeNum1 = false;
-				}
-
-
-
-
-                if (codeNum1 == true && codeNum2 == true && codeNum3 == true)
-                {
-                    dial.GetComponentInParent<OpenDoor>().OpenTheDoor();
-
-                }
-
-
-				if (code == 0 || code == 2 || code == 3 || code == 5 || code == 6 || code == 8 || code == 9 || code == 10 || code == 11 || code == 12 || code == 13 || code == 4 || code == 15 || code == 16 || code == 17 || code == 18 || code == 19 || code == 20 || code == 1 || code == 22 || code == 23 || code == 24 || code == 25 || code == 26)
-                {
-
-                    codeNum1 = false;
-                    codeNum2 = false;
-                    codeNum3 = false;
-					noise3.Play ();
-
-
-
-                }
             }
         }
 
+    }
+
+    public void dialUnlock()
+    {
+        if (code == 7)
+        {
+            codeNum1 = true;
+            noise2.Play();
+        }
+
+        if (code == 21 && codeNum1 == true)
+        {
+            codeNum2 = true;
+            noise2.Play();
+        }
+
+        if (code == 14 && codeNum2 == true)
+        {
+            codeNum3 = true;
+            noise2.Play();
+        }
+
+        if (code == 21)
+        {
+
+            noise3.Play();
+        }
+
+        if (code == 14)
+        {
+
+            noise3.Play();
+        }
+
+        if (code == 14 && codeNum1 == true && codeNum2 == false)
+        {
+            noise3.Play();
+            codeNum1 = false;
+        }
+
+        if (codeNum1 == true && codeNum2 == true && codeNum3 == true)
+        {
+            dial.GetComponentInParent<OpenDoor>().OpenTheDoor();
+
+        }
+
+        if (code == 0 || code == 2 || code == 3 || code == 5 || code == 6 || code == 8 || code == 9 || code == 10 || code == 11 || code == 12 || code == 13 || code == 4 || code == 15 || code == 16 || code == 17 || code == 18 || code == 19 || code == 20 || code == 1 || code == 22 || code == 23 || code == 24 || code == 25 || code == 26)
+        {
+
+            codeNum1 = false;
+            codeNum2 = false;
+            codeNum3 = false;
+            noise3.Play();
+        }
     }
 }

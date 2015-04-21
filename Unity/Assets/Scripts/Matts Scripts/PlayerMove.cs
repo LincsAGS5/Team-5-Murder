@@ -95,11 +95,11 @@ public class PlayerMove : MonoBehaviour
 
             if (inputInfo.Features.Position.y > playerPos + 0.09)
             {
-                this.transform.Translate(0, 0, -0.01f);
+                this.transform.Translate(0, 0, -0.05f);
             }
             else if (inputInfo.Features.Position.y < playerPos - 0.09)
             {
-                this.transform.Translate(0, 0, 0.01f);
+                this.transform.Translate(0, 0, 0.05f);
             }
 
 			this.GetComponentInChildren<scrPlaceCursor>().SetHands(inputInfo.Features.DistanceBetweenHands > 0.7);

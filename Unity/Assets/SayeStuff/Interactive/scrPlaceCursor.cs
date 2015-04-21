@@ -17,7 +17,7 @@ public class scrPlaceCursor : MonoBehaviour
 
 		// Raycast forwards to get the furthest distance that isn't blocked.
 		float cursorDistance = Distance;
-		if (Physics.Raycast(transform.position, transform.forward, out hit, Distance))
+		if (Physics.Raycast(transform.position + Vector3.up * 0.5f, transform.forward, out hit, Distance))
 			cursorDistance = hit.distance - CONTACT_OFFSET;
 
 		// Raycast down to the highest point from the floor.
@@ -41,8 +41,8 @@ public class scrPlaceCursor : MonoBehaviour
 			{
 				// Get the distance between the cursor and the closest point of the overlapping object and the cursor point.
 				Vector3 closestPart = interactives[i].ClosestPointOnBounds(cursorPosition);
-				float distance = Vector2.Distance(new Vector2(cursorPosition.x, cursorPosition.z), new Vector2(closestPart.x, closestPart.z));
-				if (distance < closestDistance)
+				float distance = Vector3.Distance(closestPart, cursorPosition);
+				if (distance > closestDistance)
 					closestInteractive = interactives[i];
 			}
 
@@ -61,6 +61,7 @@ public class scrPlaceCursor : MonoBehaviour
 			{
 				// Interact with the closest interactive object.
 				ExamineObject.Instance.Interact(closestInteractive.gameObject);
+				hands = false;
 			}
 		}
 		else

@@ -3,7 +3,7 @@ using System.Collections;
 
 public class scrInteractive : MonoBehaviour
 {
-	public GameObject Player;
+	public string Information;
 	public bool Sharp;
 
 	public void SetHighlight(bool value)

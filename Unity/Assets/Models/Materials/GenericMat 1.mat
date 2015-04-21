@@ -6,7 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Cylinder2_LegsMat
+  m_Name: GenericMat 1
   m_Shader: {fileID: 4800000, guid: a3906638ecf823843be7f3452de1039f, type: 3}
   m_ShaderKeywords: []
   m_CustomRenderQueue: -1
@@ -30,12 +30,8 @@ Material:
     m_Floats:
       data:
         first:
-          name: _Shininess
-        second: .0360789597
-      data:
-        first:
           name: _GlowDistance
-        second: .100000001
+        second: 5.53000021
       data:
         first:
           name: _Selected
@@ -44,15 +40,11 @@ Material:
       data:
         first:
           name: _Color
-        second: {r: .33088237, g: .324573457, b: .102184258, a: 1}
-      data:
-        first:
-          name: _SpecColor
-        second: {r: .742647052, g: .476318449, b: 0, a: 1}
+        second: {r: .800000012, g: .800000012, b: .800000012, a: 1}
       data:
         first:
           name: _MainColor
-        second: {r: .536764741, g: .42033416, b: .394679964, a: 1}
+        second: {r: .198529422, g: .198529422, b: .198529422, a: 1}
       data:
         first:
           name: _GlowColor

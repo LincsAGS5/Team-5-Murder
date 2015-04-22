@@ -17,7 +17,7 @@ public class waterOff : MonoBehaviour {
 
 	void OnTriggerEnter()
 	{
-		gameObject.particleSystem.enableEmission = false;
+		gameObject.GetComponent<ParticleSystem>().enableEmission = false;
 
 	}
 }

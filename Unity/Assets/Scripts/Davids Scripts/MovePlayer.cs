@@ -25,18 +25,18 @@ public class MovePlayer : MonoBehaviour {
 		if (Input.GetKey (KeyCode.UpArrow)) 
 		{
 			direction = new Vector3 (0, 0, Input.GetAxis ("Vertical") * sensitivityY);
-			rigidbody.velocity = transform.rotation * direction;
+			GetComponent<Rigidbody>().velocity = transform.rotation * direction;
 		} 
 		else 
 		{
 			if (Input.GetKey (KeyCode.DownArrow)) 
 			{
 				direction = new Vector3 (0, 0, Input.GetAxis ("Vertical") * sensitivityY);
-				rigidbody.velocity = transform.rotation * direction;
+				GetComponent<Rigidbody>().velocity = transform.rotation * direction;
 			}
 			else
 			{
-				rigidbody.velocity = new Vector3(0,0,0);
+				GetComponent<Rigidbody>().velocity = new Vector3(0,0,0);
 			}
 		}
 	}

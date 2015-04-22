@@ -8,8 +8,8 @@ public class scrInteractive : MonoBehaviour
 
 	public void SetHighlight(bool value)
 	{
-		if (renderer != null)
-			renderer.material.SetInt("_Selected", value ? (Sharp ? 2 : 1) : 0);
+		if (GetComponent<Renderer>() != null)
+			GetComponent<Renderer>().material.SetInt("_Selected", value ? (Sharp ? 2 : 1) : 0);
 
 		foreach (Renderer r in GetComponentsInChildren<Renderer>())
 		{

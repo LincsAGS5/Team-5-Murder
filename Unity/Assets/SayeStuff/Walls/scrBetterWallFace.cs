@@ -14,13 +14,13 @@ public class scrBetterWallFace : MonoBehaviour
 		foreach (string texture in textureNames)
 		{
 			// Check whether the material has the texture property.
-			if (renderer.material.HasProperty(texture))
+			if (GetComponent<Renderer>().material.HasProperty(texture))
 			{
 				// Modify the texture's scales.
-				Vector2 scale = renderer.material.GetTextureScale(texture);
+				Vector2 scale = GetComponent<Renderer>().material.GetTextureScale(texture);
 				scale.x = transform.lossyScale.x * scale.x / FixedScale.x;
 				scale.y =  transform.lossyScale.y * scale.y / FixedScale.y;
-				renderer.material.SetTextureScale(texture, scale);
+				GetComponent<Renderer>().material.SetTextureScale(texture, scale);
 			}
 		}
 

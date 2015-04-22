@@ -46,22 +46,25 @@ public class scrPlaceCursor : MonoBehaviour
 					closestInteractive = interactives[i];
 			}
 
-			// Highlight the interactive object.
-			scrInteractive closestInteractiveScript = closestInteractive.GetComponent<scrInteractive>();
-			if (closestInteractiveScript != lastHighlighted)
+			if (closestInteractive != null)
 			{
-				if (lastHighlighted != null)
-					lastHighlighted.SetHighlight(false);	// Restore the previously highlighted object to normal.
+				// Highlight the interactive object.
+				scrInteractive closestInteractiveScript = closestInteractive.GetComponent<scrInteractive>();
+				if (closestInteractiveScript != lastHighlighted)
+				{
+					if (lastHighlighted != null)
+						lastHighlighted.SetHighlight(false);	// Restore the previously highlighted object to normal.
 
-				closestInteractiveScript.SetHighlight(true);
-				lastHighlighted = closestInteractiveScript;
-			}
+					closestInteractiveScript.SetHighlight(true);
+					lastHighlighted = closestInteractiveScript;
+				}
 
-			if (hands)
-			{
-				// Interact with the closest interactive object.
-				ExamineObject.Instance.Interact(closestInteractive.gameObject);
-				hands = false;
+				if (hands)
+				{
+					// Interact with the closest interactive object.
+					ExamineObject.Instance.Interact(closestInteractive.gameObject);
+					hands = false;
+				}
 			}
 		}
 		else

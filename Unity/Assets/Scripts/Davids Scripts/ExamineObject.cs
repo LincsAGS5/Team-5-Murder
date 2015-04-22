@@ -12,7 +12,7 @@ public class ExamineObject : MonoBehaviour {
     public Font smallText;
 
     PlayerMove pm;
-    Camera lc;
+    //Camera lc;
     MovePainting mp;
 
 
@@ -40,7 +40,7 @@ public class ExamineObject : MonoBehaviour {
         leaveButton = false;
 
         pm = GameObject.Find("Player").GetComponent<PlayerMove>();
-        lc = GameObject.Find("Lock Camera").GetComponent<Camera>();
+        //lc = GameObject.Find("Lock Camera").GetComponent<Camera>();
 		mp = GameObject.Find("Painting").GetComponent<MovePainting>();
 		notebook = GameObject.Find ("Notebook").transform;
 	}
@@ -114,8 +114,10 @@ public class ExamineObject : MonoBehaviour {
 
 			pm.canLock = true;
 			pm.canMove = false;
-			lc.enabled = true;
+			//lc.enabled = true;
+            pm.cameraMove = true;
 			mp.openPainting = true;
+            Debug.Log(mp.openPainting);
 		}
 	}
 

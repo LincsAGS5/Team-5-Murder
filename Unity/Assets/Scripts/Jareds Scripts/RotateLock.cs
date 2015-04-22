@@ -387,10 +387,10 @@ public class RotateLock : MonoBehaviour
         {
 
 
-            if (GUI.Button(new Rect(190, 580, 110, 30), "Log Number"))
-            {
+            //if (GUI.Button(new Rect(190, 580, 110, 30), "Log Number"))
+            //{
 
-            }
+            //}
         }
 
     }

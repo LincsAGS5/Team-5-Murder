@@ -16,16 +16,16 @@ public class TrackManager : MonoBehaviour
         audio1 = GameObject.Find("Background Music (On the Ground)");
         audio2 = GameObject.Find("Background Music (Martys Gots a Plan)");
 
-        int i = Random.Range(0, 2);
+        int i = Random.Range(0, 3);
 
         lastPlayed = i;
 
         switch (i)
         {
-            case 0:
+            case 1:
                 audio1.GetComponent<AudioSource>().Play();
                 break;
-            case 1:
+            case 2:
                 audio2.GetComponent<AudioSource>().Play();
                 break;
         }

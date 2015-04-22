@@ -7,11 +7,13 @@ public class CameraSwitch : MonoBehaviour {
 
     public Camera camera1;
     public static int Lockoff = 0;
+
     
 
 	// Use this for initialization
 	void Start ()
     {
+
 
 	}
 	

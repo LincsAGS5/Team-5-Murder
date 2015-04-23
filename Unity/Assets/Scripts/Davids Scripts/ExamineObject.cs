@@ -123,21 +123,7 @@ public class ExamineObject : MonoBehaviour {
 
     void OnGUI()
     {
-        if (leaveButton == true)
-        {
-
-            GUI.skin.font = largeText;
-            if (GUI.Button(new Rect(175, 390, 150, 60), "Leave the Safe"))
-            {
-                CameraSwitch.Lockoff = 0;
-                RotateLock.guiOn = false;
-                OpenDoor.guiOn = false;
-                MovePainting.SlideShutThePainting += 1;
-                GUI.skin.font = smallText;
-                leaveButton = false;
-
-            }
-        }
+       
 
     }
 }

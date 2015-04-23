@@ -367,19 +367,7 @@ public class RotateLock : MonoBehaviour
 		// GUI.Label(new Rect(150,300,200,100), "Your Hovering over Code Number: " + code.ToString());
 		GUI.skin.font = smallText;
 
-        if (guiOn == true)
-        {
-
-            if (GUI.Button(new Rect(320, 630, 110, 30), "Rotate Right"))
-            {
-                RotateRight();
-            }
-
-            if (GUI.Button(new Rect(60, 630, 110, 30), "Rotate Left"))
-            {
-                RotateLeft();
-            }
-        }
+       
 
        
 
